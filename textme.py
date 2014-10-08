@@ -12,7 +12,7 @@ def text_factory(sid, token):
             FROM_NUM = os.environ['TWILIO_PHONE_NUMBER']
             return client.messages.create(to=TO_NUM,
                                           from_=FROM_NUM,
-                                          body="message")
+                                          body=message)
         except KeyError:
             raise Exception("Must define TWILIO_PHONE_NUMBER and "
                             "MY_PHONE_NUMBER environment variables!")
@@ -38,11 +38,11 @@ def get_text_function():
 def main():
     parser = argparse.ArgumentParser(description="To Write")
     parser.add_argument("message",
-                        help="directories to save documents to")
+                        help="Message to send")
 
     args = parser.parse_args()
-    texter = get_text_function()
 
+    texter = get_text_function()
     texter(args.message)
 
 
