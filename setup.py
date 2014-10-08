@@ -6,7 +6,8 @@ setup(
     author="Christoper Kotfila",
     author_email="kotfic@gmail.com",
     license="GPL",
-    packages=find_packages(),
+    install_requires=['twilio'],
+    py_modules=['textme'],
     entry_points={
         "console_scripts": [
             "textme = textme:main"
