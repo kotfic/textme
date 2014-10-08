@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
     name="textme",
@@ -6,7 +6,6 @@ setup(
     author="Christoper Kotfila",
     author_email="kotfic@gmail.com",
     license="GPL",
-    install_requires=['twilio'],
     py_modules=['textme'],
     entry_points={
         "console_scripts": [
@@ -14,3 +13,4 @@ setup(
         ]
     }
 )
+
