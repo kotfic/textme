@@ -3,10 +3,11 @@ Just a little wrapper around email/sms gateways provided by most cellular compan
 (http://www.verizonwireless.com/support/vtext-website-faqs/)
 
 These variables must be defined in your environment (eg. .bashrc)
-
+```bash
 export TEXTME_TO_EMAIL=[user@vtext.com]
 export TEXTME_FROM_EMAIL=[user@gmail.com]
 export TEXTME_PASSWORD=[*******]
+```
 
 ## Usage
 
